@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@500&family=Playfair+Display:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: var(--dark0);
+    background-color: var(--dark0);
+}
+
+:root{
+    --dark0:#F1F6F9;
+    --dark1:#9BA4B5;
+    --dark2:#394867;
+    --dark3:#212a3e;
+}
+span{
+    color: var(--dark1);
+}
+
+video{
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0 var(--dark3);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 1rem;
+    max-width: 50%;
+}
+
+.container form input{
+    border: none;
+    border-radius: 10px;
+    margin: 1rem .7rem;
+    padding: 1rem;
+    width: 80%;
+}
+
+.container form textarea{
+    border: none;
+    border-radius: 10px;
+    margin: 1rem .7rem;
+    padding: 1rem;
+}
+
+button{
+    color: var(--dark0);
+    background-color: var(--dark3);
+    border: none;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container form h1{
+    font-size: 3rem;
+    color: var(--dark0);
+}

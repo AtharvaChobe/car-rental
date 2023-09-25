@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@500&family=Playfair+Display:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+
+:root{
+    --dark0:#F1F6F9;
+    --dark1:#9BA4B5;
+    --dark2:#394867;
+    --dark3:#212a3e;
+}
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+    /* background-color: var(--dark1); */
+}
+span{
+    color: var(--dark1);
+}
+
+.container video{
+    width: 30%;
+    border-radius: 20px;
+    margin: 1rem;
+    /* box-shadow: 10px 10px 0px var(--dark1); */
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* background-color: var(--dark0); */
+    margin-top: 3rem;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 40%;
+}
+
+.container form select{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 15px 0;
+}
+
+.container form select option{
+    padding: 10px 20px;
+    margin: 15px 0;
+}
+
+.container form input{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 15px 0;
+}
+
+.container form label{
+    font-size: 1.2rem;
+}
+
+form button{
+    color: var(--dark0);
+    background-color: var(--dark1);
+    border: none;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.container form h1{
+    font-size: 4rem;
+}
+
+.car-carousel{
+    width: 100%;
+    height: 170vh;
+    background-color: var(--dark0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.car-carousel h1{
+    font-size: 3.3rem;
+    color: var(--dark3);
+    
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-name: slowLoad;
+    animation-timing-function:ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+
+.scrolling{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.card {
+    display: inline-block;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+.card img{
+    width: 30%;
+    margin: 0 35%;
+}
+
+.card .carinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card .carinfo h3{
+    font-size: 2rem;
+    color: black;
+    margin: 10px 20px;
+}
+.btn{
+    color: var(--dark0);
+    background-color: var(--dark1);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* carousel scroll bar css */
+.scrolling::-webkit-scrollbar {
+    width: 19px;               /* width of the entire scrollbar */
+  }
+  
+  .scrolling::-webkit-scrollbar-track {
+    /* background: var(--dark1);        color of the tracking area */
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  .scrolling::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+    border-radius: 30px;       /* roundness of the scroll thumb */
+    border: 8px solid var(--dark3);  /* creates padding around scroll thumb */
+  }
+
+
+  header{
+    margin: 0;
+    /* padding: 0 1rem; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    background-color: var(--dark1);
+}
+
+.logo{
+    width: 25%;
+    margin: 1rem 0;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-left: 25px;
+    color: var(--dark2);
+    padding: .7rem .9rem;
+    border-radius: 15px;
+}
+
+.navbar a:hover{
+    background-color: var(--dark0);
+}
